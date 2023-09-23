@@ -4,7 +4,9 @@
 // import TestProps2 from "./components/TestProps/prop2";
 // import TestProps3 from "./components/TestProps/prop3";
 
-import Item from "./components/ConditionalRendering";
+// import Item from "./components/ConditionalRendering";
+
+import People from "./components/RenderingList/People";
 
 function App() {
   return (
@@ -22,11 +24,13 @@ function App() {
 
         {/* <TestProps3 style={{backgroundColor:"red", border:"none", padding:15, borderRadius:7, color:"white", fontWeight:"bold"}}/> */}
 
-        <ul>
+        {/* <ul>
             <Item name={"Space suit"} isPacked={true}/>
             <Item name={"element a golden leaf"} isPacked={true}/>
             <Item name={"Photo of dog"} isPacked={false}/>
-        </ul>
+        </ul> */}
+
+        <People />
     </div>
   )
 }
