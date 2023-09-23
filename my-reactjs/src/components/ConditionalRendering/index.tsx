@@ -5,14 +5,20 @@ interface ItemProps{
   isPacked: boolean;
 }
 
+// const Item: React.FC<ItemProps> = (props) => {
+//   const {name, isPacked} = props;
+//   if(isPacked){
+//     return <li>{name} 👌🏻</li>
+//   }
+//   return <li>
+//     {name}
+//   </li>
+//}
 const Item: React.FC<ItemProps> = (props) => {
   const {name, isPacked} = props;
-  if(isPacked){
-    return <li>{name} 👌🏻</li>
-  }
-  return <li>
-    {name}
-  </li>
+  return isPacked ? null : <li>{name} 👌🏻</li>;
+
 }
+
 
 export default Item;
