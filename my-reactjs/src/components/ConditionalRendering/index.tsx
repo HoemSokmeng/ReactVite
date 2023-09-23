@@ -14,9 +14,18 @@ interface ItemProps{
 //     {name}
 //   </li>
 //}
+// const Item: React.FC<ItemProps> = (props) => {
+//   const {name, isPacked} = props;
+//   return isPacked ? null : <li>{name} 👌🏻</li>;
+
+// }
+
 const Item: React.FC<ItemProps> = (props) => {
   const {name, isPacked} = props;
-  return isPacked ? null : <li>{name} 👌🏻</li>;
+  // return <li>{name} {isPacked && "👌🏻"}</li>;
+  return <>{
+    !isPacked && <li>{name}</li> //false
+  }</>
 
 }
 
