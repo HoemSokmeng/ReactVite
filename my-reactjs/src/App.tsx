@@ -6,7 +6,7 @@
 
 // import Item from "./components/ConditionalRendering";
 
-import Student from "./components/RenderingList/Student";
+import FillterStudent  from "./components/RenderingList/Student";
 
 function App() {
   return (
@@ -32,8 +32,8 @@ function App() {
 
         {/* <People /> */}
 
-        <Student />
-        
+        {/* <Student /> */}
+        <FillterStudent />
     </div>
   )
 }
