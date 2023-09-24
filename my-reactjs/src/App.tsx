@@ -6,7 +6,7 @@
 
 // import Item from "./components/ConditionalRendering";
 
-import People from "./components/RenderingList/People";
+import Student from "./components/RenderingList/Student";
 
 function App() {
   return (
@@ -30,7 +30,10 @@ function App() {
             <Item name={"Photo of dog"} isPacked={false}/>
         </ul> */}
 
-        <People />
+        {/* <People /> */}
+
+        <Student />
+        
     </div>
   )
 }
