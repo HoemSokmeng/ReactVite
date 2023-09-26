@@ -6,7 +6,8 @@
 
 // import Item from "./components/ConditionalRendering";
 
-import FillterStudent  from "./components/RenderingList/Student";
+// import FillterStudent  from "./components/RenderingList/Student";
+import StateDemo from "./components/State";
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
         {/* <People /> */}
 
         {/* <Student /> */}
-        <FillterStudent />
+        {/* <FillterStudent /> */}
+        <StateDemo />
     </div>
   )
 }
